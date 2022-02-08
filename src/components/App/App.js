@@ -3,12 +3,20 @@ import React from 'react';
 class App extends React.Component{
     constructor(props){
         super(props);
+        this.state = {
+            quote = '',
+            authort = '',
+        }
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick(){
+
     }
     render(){
         return(
             <div>
                 <div id="quote-box">
-                    <h2 id="quote-box">Hello World!</h2>
+                    <h2 id="text" ></h2>
                     <p id="author"></p>
                     <div>
                         <a id="tweet-quote"></a>
@@ -19,3 +27,5 @@ class App extends React.Component{
         )
     }
 }
+
+export default App;
