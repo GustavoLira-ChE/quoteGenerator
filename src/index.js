@@ -3,7 +3,7 @@ import reactDom from 'react-dom';
 import './index.css'
 
 
-/* Here comes the import components to display in tha app */
+/* Here comes the import components to display in that app */
 import App from './components/App';
 
 reactDom.render(

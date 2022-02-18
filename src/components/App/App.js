@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 
 
 class App extends React.Component{
@@ -31,14 +32,16 @@ class App extends React.Component{
     }
     render(){
         return(
-            <div>
-                <div id="quote-box" onLoad={this.handleQuotes} onClick={this.handleQuotes}>
-                    <h2 id="text">{this.state.quote}</h2>
-                    <p id="author" >{this.state.author}</p>
-                    <div>
-                        <a id="tweet-quote"></a>
-                        <button id="new-quote">Get new quote</button>
-                    </div>
+            <div id="quote-box">
+                <h2 id="text">{this.state.quote}</h2>
+                <p id="author" >{this.state.author}</p>
+                <div>
+                    <button>
+                        <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank">
+                        </a>
+                        <i className="bi bi-twitter"></i>
+                    </button>
+                    <button id="new-quote" type="button" className="btn btn-primary" onClick={this.handleQuotes}>Get new quote</button>
                 </div>
             </div>
         )
