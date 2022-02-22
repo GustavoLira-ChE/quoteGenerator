@@ -1,0 +1,50 @@
+#bkg-color{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quote-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px hsl(0deg 0% 0% / 0.2);
+}
+#float-element{
+    float: left;
+    font-size: 50px;
+    margin-right: 8px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+#text{
+    align-self: center;
+    max-width: 600px;
+    margin-bottom: 16px;
+}
+#author{
+    align-self: end;
+}
+#button-sec{
+    display: flex;
+    justify-content: space-between;
+}
+#tweet-quote, 
+#new-quote{
+    border: none;
+    color: white;
+}
+#tweet-icon{
+    color: white;
+}
+#tweet-icon:hover,
+#new-quote:hover{
+    color: black;
+    border-radius: black 1px solid;
+}
+p{
+    position: absolute;
+    bottom: 20px;
+}
